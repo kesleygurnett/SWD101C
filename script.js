@@ -1,11 +1,16 @@
-let idealCar= {
-    name: 'Mustang',
-    color: 'Red',
-    weightInPounds: 3600,
-    myCar: function(){
-        console.log('My ideal car is a '+ this.name +' with a color of '+ this.color + ', but I do not want it to be over '+ this.weightInPounds + ' pounds.');
+function numberChecking(number1: 432, number2: 10){
+    if(number1 > 100){
+        console.log("Number 1 has many digits!");
     }
+    if(number1 < 0){
+        console.log("Number 1 is a negative number!");
+    }
+    if(number2 < 20){
+        console.log("Number 2 is not a very high number.");
+    }
+    if(number2 > 50){
+        console.log("Number 2 is a high number.");
+    }
+}
 
-};
-
-idealCar.myCar();
+numberChecking(432, 10);
